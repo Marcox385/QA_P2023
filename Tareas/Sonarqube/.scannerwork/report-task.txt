@@ -2,5 +2,5 @@ projectKey=practica_sonarqube
 serverUrl=http://localhost:9000
 serverVersion=9.9.0.65466
 dashboardUrl=http://localhost:9000/dashboard?id=practica_sonarqube
-ceTaskId=AYb7iOq1eDejjlQ_KySM
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYb7iOq1eDejjlQ_KySM
+ceTaskId=AYb7rAjKeDejjlQ_KySN
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYb7rAjKeDejjlQ_KySN

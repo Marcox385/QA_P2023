@@ -2,6 +2,7 @@
 class Triangle:
     ''' Triangle utilities '''
     def __init__(self) -> None:
+        ''' Initializer left empty on purpose. Use class methods instead. '''
         pass
 
     def side_getter(self, side:str) -> float:
