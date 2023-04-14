@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[1:7]","start":1679973105462,"end":1679973107792,"title":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[1:7] 21:11:45.462-21:11:47.792 Scalene triangle"},{"id":2,"group":1,"content":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[2:25]","start":1679973107811,"end":1679973107846,"title":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[2:25] 21:11:47.811-21:11:47.846 Equilateral triangle"},{"id":3,"group":1,"content":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[3:43]","start":1679973107857,"end":1679973107903,"title":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[3:43] 21:11:47.857-21:11:47.903 Isosceles triangle"},{"id":4,"group":1,"content":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[4:61]","start":1679973107912,"end":1679973107957,"title":"triangle-karate-test\/src\/test\/java\/triangle\/type\/TriangleType[4:61] 21:11:47.912-21:11:47.957 Isosceles triangle"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
